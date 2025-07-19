@@ -6,7 +6,7 @@ body {
   
   background-size: cover;      /* Makes the image cover the entire area */
   background-position: center; /* Keeps it centered */
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   height: 150vh;
   font-family: sans-serif;
 }
