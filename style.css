@@ -259,3 +259,32 @@ button[onclick*="printEmployees"]:hover {
   font-weight: 600;
   font-size: 1.1em;
 }
+@media print {
+  /* Hide unwanted elements */
+  #employeeForm,
+  .search-sort-wrapper,
+  button[onclick*="printEmployees"],
+  form button {
+    display: none !important;
+  }
+
+  /* Show only the table cleanly */
+  #employeeTable {
+    color: black !important;
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  #employeeTable th,
+  #employeeTable td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+  }
+
+  /* Optional: remove background and shadows */
+  body, .container {
+    background: white !important;
+    box-shadow: none !important;
+  }
+}
